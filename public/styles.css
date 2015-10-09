@@ -1,0 +1,69 @@
+html, body {
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+div .container {
+  background-color: red;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+div .entry {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+}
+
+div .feed {
+  border: 3px solid blue;
+  width: 100%;
+}
+
+/*div .nav {*/
+header {
+  background-color: #4B98D0;
+  clear: both;
+  float: left;
+  /*position: fixed;*/
+  width: 75%;
+}
+
+div .remodal {
+  background-color: #4B98D0;
+}
+
+.entry:nth-of-type(even) {
+  /*background-color: #FEFBF2;*/
+  background-color: beige;
+
+}
+
+.entry:nth-of-type(odd) {
+  background-color: #FDFAF3;
+}
+
+h1 {
+  margin-left: 2%;
+}
+
+.remodal {
+  height: 70vh;
+  margin: 0;
+  width: 100%;
+}
+.remodal-wrapper {
+  padding: 0;
+  width: 100%;
+}
+.remodal-bg {
+}
+
+.remodal a{
+  text-shadow: 3px 3px solid black;
+}
