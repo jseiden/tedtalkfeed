@@ -13,6 +13,11 @@
     "express": "^4.13.3"
   },
   "englnes": {
-    "node" : "0.12.7"
+    "node": "0.12.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.10",
+    "gulp": "^3.9.0",
+    "gulp-watch": "^4.3.5"
   }
 }

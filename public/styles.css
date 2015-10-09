@@ -1,14 +1,23 @@
 html, body {
+  font-family: 'Inconsolata' ;
   padding: 0;
   width: 100%;
 }
 
-a {
-  text-decoration: none;
+body {
+  /*background-color: #686868;*/
+  background-image: url("assets/dark-tire.png");
 }
 
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+blockquote a:hover {
+  text-decoration: none;
+}
 div .container {
-  background-color: red;
   float: left;
   clear: both;
   width: 100%;
@@ -17,29 +26,34 @@ div .container {
 div .entry {
   float: left;
   margin: 0 auto;
+  padding: 2%;
   width: 100%;
 }
 
 div .feed {
   border: 3px solid blue;
+  margin-bottom: 10px;
   width: 100%;
 }
 
-/*div .nav {*/
 header {
   background-color: #4B98D0;
+  background: linear-gradient(to right, #4B98D0, #FDFAF3);
+  color: black;
   clear: both;
   float: left;
-  /*position: fixed;*/
-  width: 75%;
+  font-weight: bolder;
+  padding: 2%;
+  width: 100%;
 }
 
 div .remodal {
   background-color: #4B98D0;
+  background: url("assets/office.png");
+  color: black;
 }
 
 .entry:nth-of-type(even) {
-  /*background-color: #FEFBF2;*/
   background-color: beige;
 
 }
@@ -48,8 +62,24 @@ div .remodal {
   background-color: #FDFAF3;
 }
 
+.entry h5 {
+  font-weight: bold;
+}
+
+footer {
+  margin: 0 auto;
+}
 h1 {
   margin-left: 2%;
+}
+
+
+.linkSpan {
+  float: left;
+}
+
+.moreInfoSpan {
+  float: right;
 }
 
 .remodal {
