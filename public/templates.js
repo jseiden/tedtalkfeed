@@ -9,5 +9,5 @@ var modalTemplate = _.template("<h5><%= title %></h5>" +
   "<blockquote><%= content %></blockquote>" +
   "<p><a href=<%=link %>>Watch this Ted Talk</a></p>" +
   "<span class='dateSpan'>Posted on <% var date = new Date(publishedDate); print(date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()) %></span>" +
-  "<span class='categorySpan'>Category: <%=categories %></span>"
+  "<span class='categorySpan'>Cat: <%=categories %></span>"
 );
