@@ -79,7 +79,9 @@ h1 {
   font-family: 'Cinzel';
 }
 .redTed {
-  color: red;
+  color: #FA120C;
+  font-family: "Work Sans";
+  font-weight: bolder;
 }
 
 .linkSpan {
@@ -110,7 +112,7 @@ h1 {
 
 .remodal h5 {
   color: #900000;
-  font-family: "Cinzel";
+  font-family: "Cinzel", "Verdana", serif;
   font-weight: bold;
 }
 
