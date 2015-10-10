@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <title>Ted Talk Feed</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-      <link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
-      <link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
-      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cinzel:400,900'>
-      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Serif+Pro'>
-      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Work+Sans:400,600'>
-      <link rel='stylesheet' href="styles.css">
+        <!-- author: Jake Seiden -->
+        <title>Ted Talk Feed</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
+        <link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cinzel:400,900'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Serif+Pro'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Work+Sans:400,600'>
+        <link rel='stylesheet' href="styles.css">
     </head>
     <body>
-      <!-- .remodal-bg marks background for modal popup- which is the the whole page -->
-      <div class="remodal-bg">
-        <div class="container u-full-width">
-          <div class="row">
-            <header>
-              <h1> <span class="redTed">TED</span> Talk Feed</h1>
-            </header>
-          </div>
+        <!-- .remodal-bg marks background for modaal -->
+        <div class="remodal-bg">
+           <div class="container u-full-width">
+               <div class="row">
+                  <header>
+                     <h1> <span class="redTed">TED</span> Talk Feed</h1>
+                  </header>
+              </div>
 
-          <section>
-            <div id="feed">
-            </div>
-          </section>
+              <section>
+                  <div id="feed">
+                     <!-- entries go here -->
+                  </div>
+              </section>
 
-          <!-- modal popup -->
-          <div data-remodal-id="modal">
-            <button data-remodal-action="close" class="remodal-close closeButton"></button>
-            <div class="modalContent">
-            </div>
-            <button data-remodal-action="cancel" class="remodal-cancel closeButton">Close</button>
-          </div>
+              <!-- modal popup - not visible at first-->
+              <div data-remodal-id="modal">
+                  <button data-remodal-action="close" class="remodal-close closeButton"></button>
+                  <div class="modalContent">
+                  </div>
+                  <button data-remodal-action="cancel" class="remodal-cancel closeButton">Close</button>
+              </div>
+              <!-- end of modal -->
 
-        </div> <!-- end of .container -->
-      </div> <!-- end of .remodal-bg -->
+           </div> <!-- end of .container -->
+        </div> <!-- end of .remodal-bg -->
 
       <!-- scripts -->
       <script src="bower_components/lodash/lodash.min.js"></script>

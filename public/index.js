@@ -1,53 +1,55 @@
 (function(){
 
+  // TED talk videos RSS feed URL
+  var feedUrl = "http://feeds.feedburner.com/tedtalks_video";
+  // Google Feeds API setup. will deliver RSS as JSON
   google.load("feeds", "1");
-
+  // fn initialize will be passed as a callback to the asynchronous fn that fetches the RSS data
   function initialize() {
-    var feed = new google.feeds.Feed("http://feeds.feedburner.com/tedtalks_video");
+    // setup to ask feed for 50 most recent entries
+    var feed = new google.feeds.Feed(feedUrl);
     feed.includeHistoricalEntries();
-    feed.setNumEntries(20);
+    feed.setNumEntries(50);
+
     feed.load(function(result) {
       if (!result.error) {
         var container = $("#feed");
+        // create one .entry div for each entry object
         _.each(result.feed.entries, function(entry){
           var div = $("<div></div>").addClass("entry row");
-          // store entry in jQuery data attribute
+          // store entry in jQuery data attribute for possible use in the info modal
           div.data("talk-info", entry);
-          // using lodash template
+          // compile lodash template then append to div
           compiledEntry = entryTemplate(entry);
           div.append(compiledEntry);
-          console.log(entry);
-          // div.append(entry.content);
           container.append(div);
         })
       }
     });
   }
+  // asynchronously fetch rss feed. initialize will handle the data once it returns
   google.setOnLoadCallback(initialize);
 
-  $(".linkSpan").on("click", function(){
-    event.stopPropagation();
-  })
-
-  // click event on 'more info' link bubbles up to entry div
+  // listen for click on .entry div. click will bubble up from .info link
   $(document).on("click", ".entry", function(){
-    // retrieve stored entry from jQuery data attribute
     if($(event.target).is(".info")){
-      console.log("winner");
+      // retrieve stored entry object from jQuery data attribute
       var talkInfo = $(this).data("talk-info");
-      // using lodash template
+      // compile lodash template
       compiledModal = modalTemplate(talkInfo);
+      // remove any remaining html from .modalContent before appending new compiled template
       $(".modalContent").html('');
       $(".modalContent").append(compiledModal);
 
-      var options = {};
-      $('[data-remodal-id=modal]').remodal(options);
+      // create instance of remodal modal
+      $('[data-remodal-id=modal]').remodal({});
       var inst = $('[data-remodal-id=modal]').remodal();
 
       inst.open();
     }
   })
 
+  // if the user refreshes with the modal active, this closes it cleanly and goes to main list
   $(window).on("unload", function(){
     inst.close();
     inst.destroy();
@@ -55,3 +57,7 @@
   })
 
 })();
+
+// notes:
+// I considered an MVC framework but decided it was overkill.  
+// jQuery handles the events and the lodash templates generate html when needed

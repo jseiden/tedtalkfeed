@@ -27,13 +27,6 @@ div .container {
   width: 100%;
 }
 
-div .entry {
-  float: left;
-  margin: 0 auto;
-  padding: 5%;
-  width: 90%;
-}
-
 div .feed {
   background-color: beige;
   float: left;
@@ -44,6 +37,7 @@ div .feed {
   width: 100%;
 }
 
+/* header styles */
 header {
   background-color: #4B98D0;
   background: linear-gradient(to right, #4B98D0, #FDFAF3);
@@ -55,10 +49,22 @@ header {
   width: 90%;
 }
 
-div .remodal {
-  background-color: #4898D0;
-  background: linear-gradient(to bottom, #4B98D0, #FDFAF3);
-  color: black;
+h1 {
+  font-family: 'Cinzel';
+}
+
+.redTed {
+  color: #FA120C;
+  font-family: "Work Sans";
+  font-weight: bolder;
+}
+
+/* feed entry styles */
+div .entry {
+  float: left;
+  margin: 0 auto;
+  padding: 5%;
+  width: 90%;
 }
 
 .entry:nth-of-type(even) {
@@ -83,21 +89,19 @@ div .remodal {
   font-size: 1.25em;
 }
 
-h1 {
-  font-family: 'Cinzel';
-}
-.redTed {
-  color: #FA120C;
-  font-family: "Work Sans";
-  font-weight: bolder;
-}
-
 .linkSpan {
   float: left;
 }
 
 .moreInfoSpan {
   float: right;
+}
+
+/* ***** modal styles ***** */
+div .remodal {
+  background-color: #4898D0;
+  background: linear-gradient(to bottom, #4B98D0, #FDFAF3);
+  color: black;
 }
 
 .remodal {

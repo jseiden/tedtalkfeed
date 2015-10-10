@@ -1,3 +1,4 @@
+// template for an entry. contains title, contentSnippet, video link, and info link
 var entryTemplate = _.template("<article>" +
   "<h4><%=title %></h4><p><%=contentSnippet %></p>" +
   "<span class='linkSpan'><a href=<%=link %>>Watch this Ted Talk</a></span>" +
@@ -5,6 +6,7 @@ var entryTemplate = _.template("<article>" +
   "</article>"
 );
 
+// template for 'details view' info modal. contains title, content (i.e. larger snippet), video link again, data published, and cat(egory)
 var modalTemplate = _.template("<h5><%= title %></h5>" +
   "<blockquote><%= content %></blockquote>" +
   "<p><a href=<%=link %>>Watch this Ted Talk</a></p>" +
