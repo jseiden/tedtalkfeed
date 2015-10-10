@@ -30,7 +30,7 @@ div .container {
 div .entry {
   float: left;
   margin: 0 auto;
-  padding: 2%;
+  padding: 10px;
   width: 100%;
 }
 
@@ -51,7 +51,7 @@ header {
   clear: both;
   float: left;
   font-weight: bolder;
-  padding: 2%;
+  padding: 10px;
   width: 100%;
 }
 
