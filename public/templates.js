@@ -8,6 +8,6 @@ var entryTemplate = _.template("<article>" +
 var modalTemplate = _.template("<h4><%= title %></h4>" +
   "<blockquote><%= content %></blockquote>" +
   "<p><a href=<%=link %>>Watch this Ted Talk</a></p>" +
-  "<span class='dateSpan'>Originally posted on <% var date = new Date(publishedDate); print(date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()) %></span>" +
+  "<span class='dateSpan'>Posted on <% var date = new Date(publishedDate); print(date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()) %></span>" +
   "<span class='categorySpan'>Category: <%=categories %></span>"
 );
