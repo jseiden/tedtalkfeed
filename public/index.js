@@ -46,15 +46,17 @@
       var inst = $('[data-remodal-id=modal]').remodal();
 
       inst.open();
+      
+      $(window).on("unload", function(){
+        inst.close();
+        inst.destroy();
+        this.location = this.location.origin;
+      })
     }
   })
 
   // if the user refreshes with the modal active, this closes it cleanly and goes to main list
-  $(window).on("unload", function(){
-    inst.close();
-    inst.destroy();
-    this.location = this.location.origin;
-  })
+
 
 })();
 
