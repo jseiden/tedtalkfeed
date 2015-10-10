@@ -1,7 +1,7 @@
 (function(){
 
   // TED talk videos RSS feed URL
-  var feedUrl = "http://feeds.feedburner.com/tedtalks_video";
+  var feedUrl = "https://feeds.feedburner.com/tedtalks_video";
   // Google Feeds API setup. will deliver RSS as JSON
   google.load("feeds", "1");
   // fn initialize will be passed as a callback to the asynchronous fn that fetches the RSS data
@@ -59,5 +59,5 @@
 })();
 
 // notes:
-// I considered an MVC framework but decided it was overkill.  
+// I considered an MVC framework but decided it was overkill.
 // jQuery handles the events and the lodash templates generate html when needed
