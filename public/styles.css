@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Inconsolata' ;
+  font-family: 'Source Serif Pro', 'Verdana', serif;
   padding: 0;
   width: 100%;
 }
@@ -11,15 +11,12 @@ body {
 
 a {
   text-decoration: none;
+  text-shadow: 2px 2px solid black;
   color: brown;
 }
 
-blockquote a:hover {
-  text-decoration: none;
-}
 div .container {
   float: left;
-  clear: both;
   width: 100%;
 }
 
@@ -31,8 +28,10 @@ div .entry {
 }
 
 div .feed {
+  background-color: beige;
   border: 3px solid blue;
   margin-bottom: 10px;
+  martin-top: 10px;
   width: 100%;
 }
 
@@ -48,8 +47,8 @@ header {
 }
 
 div .remodal {
-  background-color: #4B98D0;
-  background: url("assets/office.png");
+  background-color: #4898D0;
+  background: linear-gradient(to bottom, #4B98D0, #FDFAF3);
   color: black;
 }
 
@@ -66,13 +65,18 @@ div .remodal {
   font-weight: bold;
 }
 
-footer {
-  margin: 0 auto;
-}
-h1 {
-  margin-left: 2%;
+.entry span {
+  font-size: 1.5em;
 }
 
+.entry p {
+  font-size: 1.25em;
+}
+
+h1 {
+  font-family: 'Cinzel';
+  margin-left: 2%;
+}
 
 .linkSpan {
   float: left;
@@ -91,9 +95,28 @@ h1 {
   padding: 0;
   width: 100%;
 }
-.remodal-bg {
-}
 
 .remodal a{
-  text-shadow: 3px 3px solid black;
+  text-shadow: 4px 4px 4px solid black;
+}
+
+.remodal p {
+  font-size: 1.5em;
+}
+
+.remodal h4 {
+  font-family: "Cinzel";
+  font-weight: bold;
+}
+
+.remodal blockquote {
+  font-size: 1.25em;
+}
+
+.categorySpan {
+  float: right;
+}
+
+.dateSpan {
+  float: left;
 }
