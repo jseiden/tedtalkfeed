@@ -30,8 +30,8 @@ div .container {
 div .entry {
   float: left;
   margin: 0 auto;
-  padding: 0;
-  width: 100%;
+  padding: 5%;
+  width: 90%;
 }
 
 div .feed {
@@ -51,8 +51,8 @@ header {
   clear: both;
   float: left;
   font-weight: bolder;
-  padding: 0;
-  width: 100%;
+  padding: 5%;
+  width: 90%;
 }
 
 div .remodal {
