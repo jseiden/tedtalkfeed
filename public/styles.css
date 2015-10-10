@@ -12,11 +12,12 @@ body {
 a {
   text-decoration: none;
   text-shadow: 2px 2px solid black;
-  color: brown;
+  color: #4B98D0;
 }
 
 div .container {
   float: left;
+  min-width: 320px;
   width: 100%;
 }
 
@@ -29,7 +30,7 @@ div .entry {
 
 div .feed {
   background-color: beige;
-  border: 3px solid blue;
+  float: left;
   margin-bottom: 10px;
   martin-top: 10px;
   width: 100%;
@@ -61,7 +62,8 @@ div .remodal {
   background-color: #FDFAF3;
 }
 
-.entry h5 {
+.entry h4 {
+  color: #900000;
   font-weight: bold;
 }
 
@@ -76,6 +78,9 @@ div .remodal {
 h1 {
   font-family: 'Cinzel';
 }
+.redTed {
+  color: red;
+}
 
 .linkSpan {
   float: left;
@@ -87,7 +92,7 @@ h1 {
 
 .remodal {
   /*height: 90vh;*/
-  margin: 0;
+  margin: 0 auto;
   /*width: 100%;*/
 }
 .remodal-wrapper {
@@ -104,12 +109,19 @@ h1 {
 }
 
 .remodal h5 {
+  color: #900000;
   font-family: "Cinzel";
   font-weight: bold;
 }
 
 .remodal blockquote {
-  font-size: 1.25em;
+  font-size: 1em;
+}
+
+.remodal .closeButton {
+  clear: both;
+  display: block;
+  margin: 0 auto;
 }
 
 .categorySpan {
