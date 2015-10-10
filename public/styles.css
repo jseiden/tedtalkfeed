@@ -1,5 +1,6 @@
 html, body {
   font-family: 'Source Serif Pro', 'Verdana', serif;
+  overflow-x: hidden;
   padding: 0;
   width: 100%;
 }
@@ -33,6 +34,7 @@ div .feed {
   float: left;
   margin-bottom: 10px;
   martin-top: 10px;
+  padding: 0;
   width: 100%;
 }
 
@@ -137,5 +139,6 @@ h1 {
 .closeButton {
   height: 25px;
   line-height: 25px;
+  margin-top: 5px;
   padding: 0;
 }
