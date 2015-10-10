@@ -75,7 +75,6 @@ div .remodal {
 
 h1 {
   font-family: 'Cinzel';
-  margin-left: 2%;
 }
 
 .linkSpan {
@@ -87,9 +86,9 @@ h1 {
 }
 
 .remodal {
-  height: 70vh;
+  /*height: 90vh;*/
   margin: 0;
-  width: 100%;
+  /*width: 100%;*/
 }
 .remodal-wrapper {
   padding: 0;
