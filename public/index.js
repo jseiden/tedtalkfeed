@@ -14,6 +14,7 @@
     feed.load(function(result) {
       if (!result.error) {
         var container = $("#feed");
+        container.empty();
         // create one .entry div for each entry object
         _.each(result.feed.entries, function(entry){
           var div = $("<div></div>").addClass("entry row");
@@ -31,7 +32,7 @@
   google.setOnLoadCallback(initialize);
 
   // listen for click on .entry div. click will bubble up from .info link
-  $(document).on("click", ".entry", function(){
+  $(document).on("click", ".entry", function(event){
     if($(event.target).is(".info")){
       // retrieve stored entry object from jQuery data attribute
       var talkInfo = $(this).data("talk-info");
@@ -46,17 +47,15 @@
       var inst = $('[data-remodal-id=modal]').remodal();
 
       inst.open();
+
       // if the user refreshes with the modal active, this closes it cleanly and goes to main list
-      $(window).on("unload", function(){
-        inst.close();
-        inst.destroy();
-        this.location = this.location.origin;
-      })
+      // $(window).on("unload", function(){
+      //   inst.close();
+      //   inst.destroy();
+      //   this.location = this.location.origin;
+      // })
     }
   })
-
-
-
 })();
 
 // notes:

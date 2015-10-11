@@ -20,6 +20,7 @@
   "dependencies": {
     "lodash": "~3.10.1",
     "jquery": "~2.1.4",
-    "remodal": "~1.0.3"
+    "remodal": "~1.0.3",
+    "spin.js": "~2.3.2"
   }
 }

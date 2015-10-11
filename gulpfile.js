@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
 var reload = browserSync.reload;
 
 gulp.task('serve', function() {
