@@ -38,6 +38,7 @@ div .feed {
 }
 
 /* header styles */
+
 header {
   background-color: #4B98D0;
   background: linear-gradient(to right, #4B98D0, #FDFAF3);
@@ -59,7 +60,8 @@ h1 {
   font-weight: bolder;
 }
 
-/* feed entry styles */
+/* entry styles */
+
 div .entry {
   float: left;
   margin: 0 auto;
@@ -76,9 +78,15 @@ div .entry {
   background-color: #FDFAF3;
 }
 
-.entry h4 {
+/*.entry h4 {
   color: #900000;
   font-weight: bold;
+}*/
+
+.entry h4 a {
+  color: #900000;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .entry span {
@@ -98,6 +106,7 @@ div .entry {
 }
 
 /* ***** modal styles ***** */
+
 div .remodal {
   background-color: #4898D0;
   background: linear-gradient(to bottom, #4B98D0, #FDFAF3);

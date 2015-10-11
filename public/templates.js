@@ -1,6 +1,6 @@
 // template for an entry. contains title, contentSnippet, video link, and info link
 var entryTemplate = _.template("<article>" +
-  "<h4><%=title %></h4><p><%=contentSnippet %></p>" +
+  "<h4><a href=<%=link %>><%=title %></a></h4><p><%=contentSnippet %></p>" +
   "<span class='linkSpan'><a href=<%=link %>>Watch this Ted Talk</a></span>" +
   "<span class='moreInfoSpan'><a href='#modal' class='info'>More Info</a></span>" +
   "</article>"
