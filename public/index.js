@@ -1,8 +1,9 @@
 (function(){
 
   // TED talk videos RSS feed URL
-  var feedUrl = "https://feeds.feedburner.com/tedtalks_video";
+   var feedUrl = "https://feeds.feedburner.com/tedtalks_video";
   // Google Feeds API setup. will deliver RSS as JSON
+
   google.load("feeds", "1");
   // fn initialize will be passed as a callback to the asynchronous fn that fetches the RSS data
   function initialize() {
